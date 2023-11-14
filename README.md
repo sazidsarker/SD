@@ -1,2 +1,45 @@
 # SD
-This is my first Git Repository
+This is my first Git Repository.By making Calculator by using JAVA.
+Author- Sazid Sarker
+
+
+
+import java.util.*;
+public class Conditions {
+   public static void main(String args[]) {
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       int operator = sc.nextInt();
+       int b = sc.nextInt();
+
+       /**
+        * 1 -> +
+        * 2 -> -
+        * 3 -> *
+        * 4 -> /
+        * 5 -> %
+        */
+
+
+       switch(operator) {
+           case 1 : System.out.println(a+b);
+           break;
+           case 2 : System.out.println(a-b);
+           break;
+           case 3 : System.out.println(a*b);
+           break;
+           case 4 : if(b == 0) {
+                       System.out.println("Invalid Division");
+                   } else {
+                       System.out.println(a/b);
+                   }
+	    break;
+           case 5 : if(b == 0) {
+                       System.out.println("Invalid Division");
+                   } else {
+                       System.out.println(a%b);
+                   }
+	    break; 
+           default : System.out.println("Invalid Operator");
+       }
+   }
