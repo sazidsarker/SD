@@ -14,7 +14,6 @@ public class Conditions {
        int a = sc.nextInt();
        int operator = sc.nextInt();
        int b = sc.nextInt();
-
        /**
         * 1 -> +
         * 2 -> -
